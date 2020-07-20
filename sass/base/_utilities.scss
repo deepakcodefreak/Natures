@@ -4,9 +4,16 @@
 
 .margin-bottom-large{
     margin-bottom: 8rem;
+    @include respond(tab-port){
+        margin-bottom: 5rem;
+    }
 }
 .margin-top-large{
     margin-top: 8rem;
+
+    @include respond(tab-port){
+        margin-bottom: 5rem;
+    }
 }
 .margin-top-huge{
     margin-top: 10rem;
@@ -14,6 +21,9 @@
 
 .margin-bottom-medium{
     margin-bottom: 4rem;
+    @include respond(tab-port){
+        margin-bottom: 3rem;
+    }
 }
 
 .margin-bottom-small{

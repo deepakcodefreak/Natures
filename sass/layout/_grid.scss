@@ -11,7 +11,10 @@
     // [class^="col-"] : class that starts with col-
     // [class*="col-"] : class that contains col-
     // [class$="col-"] : class that ends with col-
-
+    @include respond(tab-port){
+      max-width: 50rem;
+      padding: 0 3rem;
+    }
 
 
 
@@ -22,6 +25,15 @@
         
         &:not(:last-child){
             margin-right: $gutter-horizontal;
+
+            @include respond(tab-port){
+                margin-bottom: $gutter-vertical-small;
+                margin-right: 0;
+            }
+        }
+
+        @include respond(tab-port){
+            width: 100% !important;
         }
     }
 

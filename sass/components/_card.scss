@@ -173,4 +173,56 @@
     font-weight: 100;
   }
 
+  @include respond(tab-port){
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    background-color: $color-white;
+
+  
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      
+  
+      &--back {
+        clip-path: polygon(0 15%,100% 0,100% 100%,0 100%);
+        transform: rotateY(0deg);
+        }
+    }
+  
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    &__details{
+      padding: 1rem 3rem;
+    }
+  
+    // front side style
+   
+    // Front side styling
+  
+    &__cta{
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: translate(0);
+        width: 100%;
+        padding: 7rem 4rem 4rem 4rem;
+    }
+  
+    &__price-box{
+        margin-bottom: 3rem;
+    }
+  
+    
+  
+    &__price-value{
+      font-size: 6rem;
+    }
+  }
+
 }
