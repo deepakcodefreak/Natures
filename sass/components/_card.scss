@@ -173,7 +173,10 @@
     font-weight: 100;
   }
 
-  @include respond(tab-port){
+  // @include respond(tab-port){
+    @media screen and (max-width:56.25em),
+    only screen and (hover:none){     // also apply if we have touch device that is we cant not hover in it 
+
     height: auto;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
